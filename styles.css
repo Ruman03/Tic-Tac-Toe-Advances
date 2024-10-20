@@ -190,11 +190,6 @@ h1{
         flex-direction: row;
     }
 
-    .game-board{
-        position: relative;
-        bottom: -20px;
-        margin-bottom: 0;
-    }
    
     .cell{
         width: 70px;
