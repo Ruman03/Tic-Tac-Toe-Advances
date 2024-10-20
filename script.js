@@ -110,9 +110,7 @@ function computerMove(){
         }
         board[move] = computer;
         cells[move].textContent = computer;
-        cells.forEach(cell => {
-            cell.addEventListener('click', playerMove);
-        })
+        
     }
 
     if(checkWinner(board, computer)){
@@ -127,6 +125,9 @@ function computerMove(){
         gameOver.play();
         setTimeout(showWinContainer, 300);
     }
+    cells.forEach(cell => {
+        cell.addEventListener('click', playerMove);
+    })
 }
 
 function minmax(board, depth, isMaximizing){
