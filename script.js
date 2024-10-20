@@ -55,6 +55,9 @@ function playerMove(e){
             gameOver.play();
             setTimeout(showWinContainer, 300);
         } else {
+            cells.forEach(cell => {
+                cell.removeEventListener('click', playerMove);
+            })
             setTimeout(computerMove, 900);
         }
     }
@@ -107,6 +110,9 @@ function computerMove(){
         }
         board[move] = computer;
         cells[move].textContent = computer;
+        cells.forEach(cell => {
+            cell.addEventListener('click', playerMove);
+        })
     }
 
     if(checkWinner(board, computer)){
