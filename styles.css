@@ -131,16 +131,21 @@ h1{
 
 .scoreContainer{
     position: absolute;
-    bottom: -15px;
+    width: 50px;
+    height: 100px;
+    top: 10px;
+    right: 12px;
     z-index: 10;
     display: flex;
-    gap: 8px;
     font-size: 24px;
     font-weight: bolder;
     background-color: hsl(0, 0%, 100%);
-    padding: 16px 18px;
+    padding: 8px;
     border-radius: 18px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 #playerScore{
@@ -176,7 +181,8 @@ h1{
     
 
     .scoreContainer{
-        left: 100px;
+        top: 30px;
+        left: 8px;
     }
 
     #reset{
