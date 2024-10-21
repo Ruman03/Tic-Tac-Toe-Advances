@@ -69,8 +69,8 @@ function computerMove(){
     document.body.classList.add('computerTurn');
     
     // Introduce randomness: 30% chance for a random move, 70% chance for Minimax
-    let e = 0.8;
-    let m = 0.4;
+    let e = 0.3;
+    let m = 0.2;
     let h = 0.05;
     let mode = h;
     if(easy.checked){
